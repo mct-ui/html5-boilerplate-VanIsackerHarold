@@ -7,8 +7,21 @@
 /*---------------------------------------/*
  # GENERIC
 /*---------------------------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 * {
-  color: hsl(198.0786026201, 100%, 40%);
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /*---------------------------------------/*
