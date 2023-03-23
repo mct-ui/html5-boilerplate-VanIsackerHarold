@@ -298,7 +298,7 @@ a {
 }
 
 a:visited {
-  color: red;
+  color: $color-primary;
 }
 
 a:hover {
@@ -320,7 +320,25 @@ a:active {
     Creates a horizontal row with padding
 */
 
-.o-row {}
+.o-row {
+  padding: $space-m $space-m 0;
+  display: flow-root;
+}
+
+.o-row-dark {
+  background-color: black;
+  color: white;
+}
+
+.o-row-primary {
+  background-color: $color-primary;
+}
+
+.o-row-lg {
+  @include mq(bp2) {
+    padding: $space-xl $space-xl;
+  }
+}
 
 /*
     Objects: Container
@@ -328,7 +346,10 @@ a:active {
     Creates a horizontal container that sets de global max-width
 */
 
-.o-container {}
+.o-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 /*
     Objects: Layout
