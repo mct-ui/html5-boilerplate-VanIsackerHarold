@@ -282,13 +282,23 @@ hr {
   margin-bottom: $space-m;
 }
 
-a {}
+a {
+  color: $color-primary;
+  transition: all 0.1s ease-in-out;
+}
 
-a:hover {}
+a:visited {
+  color: red;
+}
 
-a:visited {}
+a:hover {
+  color: $color-primary-light;
+}
 
-a:active {}
+a:active {
+  color: $color-primary-dark;
+}
+
 
 /*---------------------------------------/*
  # OBJECTS
