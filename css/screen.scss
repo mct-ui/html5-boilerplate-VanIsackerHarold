@@ -185,13 +185,23 @@ img {
     Default markup for page level elements
 */
 
-html {}
+html {
+  font-size: calc($root-font-size / 16 * 100%
+  );
+line-height: 1.5;
+font-family: $font-family-primary;
+color: $color-text;
+scroll-behavior: smooth;
+}
 
 /*
     Customize the background color and color to match your design.
 */
 
-::selection {}
+::selection {
+  background-color: $color-primary;
+  color: white;
+}
 
 /*
     Elements: typography
