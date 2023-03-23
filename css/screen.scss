@@ -209,15 +209,35 @@ scroll-behavior: smooth;
     Default markup for typographic elements
 */
 
-h1 {}
+h1 {
+  font-size: $ms5;
+  font-weight: 700;
+  line-height: calc($baseline *4);
+  margin-bottom: $space-m;
+}
 
-h2 {}
+h2 {
+  font-weight: 700;
+  font-size: $ms3;
+  line-height: calc($baseline *3);
+  margin-bottom: $space-m;
+}
 
-h3 {}
+h3 {
+  font-weight: 700;
+  font-size: $ms1;
+  line-height: calc($baseline *3);
+  margin-bottom: $space-m;
+}
 
 h4,
 h5,
-h6 {}
+h6 {
+  font-weight: 700;
+  font-size: $ms0;
+  line-height: calc($baseline *3);
+  margin-bottom: $space-m;
+}
 
 p,
 ol,
@@ -225,19 +245,42 @@ ul,
 dl,
 table,
 address,
-figure {}
+figure {
+  margin-bottom: $space-m;
+}
 
 ul,
-ol {}
+ol {
+  padding: 0;
+  list-style-position: inside;
+}
 
 li ul,
-li ol {}
+li ol {
+  margin-bottom: 0;
+}
 
-blockquote {}
+blockquote {
+  font-family: $font-family-secondary;
+  font-style: Italic;
+  font-size: $ms3;
+  line-height: calc($baseline *4);
+  margin-bottom: $space-m;
+}
 
-figcaption {}
+figcaption {
+  font-size: $ms-1;
+  line-height: calc($baseline *2);
+  margin-top: $space-xs;
+  color: $color-text-lighter;
+}
 
-hr {}
+hr {
+  border: 0;
+  height: 1px;
+  background: $color-border;
+  margin-bottom: $space-m;
+}
 
 a {}
 
