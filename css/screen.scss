@@ -15,11 +15,13 @@
 @mixin mq($breakpoint, $query1: min, $query2: width) {
   $query: map-get($breakpoints, $breakpoint);
 
-  @if $query != null {
+  @if $query !=null {
     @media (#{$query1}-#{$query2}: #{$query}) {
       @content;
     }
-  } @else {
+  }
+
+  @else {
     @media (#{$query1}-#{$query2}: $breakpoint) {
       @content;
     }
@@ -46,8 +48,7 @@ $color-gray-hue: hue($color-blue);
 $color-gray-saturation: 10%;
 
 $palettes: (
-  color-gray: (
-    100: hsl($color-gray-hue, $color-gray-saturation, 95%),
+  color-gray: (100: hsl($color-gray-hue, $color-gray-saturation, 95%),
     200: hsl($color-gray-hue, $color-gray-saturation, 90%),
     300: hsl($color-gray-hue, $color-gray-saturation, 80%),
     400: hsl($color-gray-hue, $color-gray-saturation, 70%),
@@ -57,8 +58,7 @@ $palettes: (
     800: hsl($color-gray-hue, $color-gray-saturation, 20%),
     900: hsl($color-gray-hue, $color-gray-saturation, 10%),
   ),
-  color-blue: (
-    100: hsl($color-blue-hue, $color-blue-saturation - 10%, 95%),
+  color-blue: (100: hsl($color-blue-hue, $color-blue-saturation - 10%, 95%),
     200: hsl($color-blue-hue, $color-blue-saturation - 10%, 90%),
     300: hsl($color-blue-hue, $color-blue-saturation - 5%, 80%),
     400: hsl($color-blue-hue, $color-blue-saturation - 5%, 65%),
@@ -68,8 +68,7 @@ $palettes: (
     800: hsl($color-blue-hue, $color-blue-saturation + 10%, 20%),
     900: hsl($color-blue-hue, $color-blue-saturation + 10%, 10%),
   ),
-  color-teal: (
-    100: hsl($color-teal-hue, $color-teal-saturation - 10%, 95%),
+  color-teal: (100: hsl($color-teal-hue, $color-teal-saturation - 10%, 95%),
     200: hsl($color-teal-hue, $color-teal-saturation - 10%, 90%),
     300: hsl($color-teal-hue, $color-teal-saturation - 5%, 80%),
     400: hsl($color-teal-hue, $color-teal-saturation, 70%),
@@ -149,7 +148,7 @@ $breakpoints: (
   bp3: calc(993 / 16 * 1em),
   bp4: calc(1201 / 16 * 1em),
   bp5: calc(1401 / 16 * 1em),
-) !default;
+  ) !default;
 
 /*---------------------------------------/*
  # GENERIC
@@ -163,6 +162,7 @@ $breakpoints: (
 
 * {
   // Reset margin and font-size and font-weight
+  color: $color-primary;
 }
 
 img {
@@ -180,15 +180,13 @@ img {
     Default markup for page level elements
 */
 
-html {
-}
+html {}
 
 /*
     Customize the background color and color to match your design.
 */
 
-::selection {
-}
+::selection {}
 
 /*
     Elements: typography
@@ -196,19 +194,15 @@ html {
     Default markup for typographic elements
 */
 
-h1 {
-}
+h1 {}
 
-h2 {
-}
+h2 {}
 
-h3 {
-}
+h3 {}
 
 h4,
 h5,
-h6 {
-}
+h6 {}
 
 p,
 ol,
@@ -216,37 +210,27 @@ ul,
 dl,
 table,
 address,
-figure {
-}
+figure {}
 
 ul,
-ol {
-}
+ol {}
 
 li ul,
-li ol {
-}
+li ol {}
 
-blockquote {
-}
+blockquote {}
 
-figcaption {
-}
+figcaption {}
 
-hr {
-}
+hr {}
 
-a {
-}
+a {}
 
-a:hover {
-}
+a:hover {}
 
-a:visited {
-}
+a:visited {}
 
-a:active {
-}
+a:active {}
 
 /*---------------------------------------/*
  # OBJECTS
@@ -258,8 +242,7 @@ a:active {
     Creates a horizontal row with padding
 */
 
-.o-row {
-}
+.o-row {}
 
 /*
     Objects: Container
@@ -267,8 +250,7 @@ a:active {
     Creates a horizontal container that sets de global max-width
 */
 
-.o-container {
-}
+.o-container {}
 
 /*
     Objects: Layout
